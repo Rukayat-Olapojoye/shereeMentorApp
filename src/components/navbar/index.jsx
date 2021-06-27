@@ -1,18 +1,62 @@
-import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import { AppContext } from '../stateprovider';
+import { Link, useHistory } from 'react-router-dom';
+//import { BrowserRouter as Router } from 'react-router-dom';
+
 import './navstyle.css';
 
 function Navbar() {
+
+	const { state, dispatch } = useContext(AppContext);
+	const history = useHistory();
+
+	const logout = () => {
+		dispatch({ type: 'LOGOUT' });
+		history.push('/Home');
+	}
 	return (
-		<nav>
-			<ul>
-				<li>
-					<Link to="/">Home</Link>
-				</li>
-				<li>
-					<Link to="/test-page">Test Page</Link>
-				</li>
-			</ul>
+		// <nav>
+		// 	<ul>
+		// 		<li>
+		// 			<Link to="/">Home</Link>
+		// 		</li>
+		// 		<li>
+		// 			<Link to="/test-page">Mentors Page</Link>
+		// 		</li>
+		// 	</ul>
+		// </nav>
+
+		<nav className="navbar">
+			<Link className="navlink" to='/Home'>
+				Home
+			</Link>
+
+			{!state.isLoggedIn ? (
+				<>
+					<Link className="navlink" to='/register'>
+						Sign Up
+					</Link>
+
+					<Link className="navlink" to='/login'>
+						Login
+					</Link>
+				</>
+			) : (
+				<>
+					<Link className="navlink" to='/mentorspage'>
+						Find a mentor
+					</Link>
+
+					<span onClick={logout} className="navlink">
+						Logout
+					</span>
+
+				</>
+			)}
+
 		</nav>
+
+
 	);
 }
 
