@@ -12,7 +12,7 @@ function Navbar() {
 
 	const logout = () => {
 		dispatch({ type: 'LOGOUT' });
-		history.push('/Home');
+		history.push('/home');
 	}
 	return (
 		// <nav>
@@ -27,7 +27,7 @@ function Navbar() {
 		// </nav>
 
 		<nav className="navbar">
-			<Link className="navlink" to='/Home'>
+			<Link className="navlink" to='/home'>
 				Home
 			</Link>
 
@@ -44,7 +44,7 @@ function Navbar() {
 			) : (
 				<>
 					<Link className="navlink" to='/mentorspage'>
-						Find a mentor
+						View all Mentors
 					</Link>
 
 					<span onClick={logout} className="navlink">

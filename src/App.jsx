@@ -15,7 +15,7 @@ function App() {
 				<Switch>
 					<Switch>
 						{/*render Home Component when we hit /home */}
-						<Route exact path='/Home'>
+						<Route exact path='/home'>
 							<Home />
 						</Route>
 						{/* render Login Component when we hit /login */}
