@@ -1,5 +1,5 @@
 .navbar {
-        background: #495fda;
+        background: #92939b;
         color: white;
         margin-bottom: 30px;
         display: flex;
@@ -11,7 +11,7 @@
       .navlink {
         display: inline-block;
         padding: 10px 15px;
-        color: white;
+        color: rgb(8, 8, 8);
         cursor: pointer;
       }
       
