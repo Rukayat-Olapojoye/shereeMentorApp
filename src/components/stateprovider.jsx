@@ -8,6 +8,10 @@ const initialState = {
     isLoggedIn: false,
     userId: null,
     userEmail: null,
+    // state for newMentor 
+    mentorUser: {},
+    imageSelected: "",
+    imageUploaded: "",
 };
 
 function reducer(state, action) {
@@ -21,6 +25,21 @@ function reducer(state, action) {
         saveState.userId = action.payload.userId;
 
     }
+
+    if (action.type === 'SELECT_IMAGE') {
+        saveState.imageSelected = action.payload.imageSelected;
+
+    }
+    if (action.type === 'SAVE_IMAGE') {
+        saveState.imageUploaded = action.payload.imageUploaded;
+
+    }
+    if (action.type === 'REGISTER_MENTOR') {
+        saveState.isLoggedIn = false;
+        saveState.mentorUser = action.payload.mentorUser;
+
+    }
+
     if (action.type === 'LOGIN') {
         saveState.isLoggedIn = true;
         saveState.userEmail = action.payload.userEmail;

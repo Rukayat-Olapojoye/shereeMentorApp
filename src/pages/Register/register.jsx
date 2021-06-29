@@ -26,9 +26,8 @@ function RegisterPage() {
 
 
         let userFound = localStorage.getItem(email);
-        console.log(userFound);
         if (userFound) {
-            return alert("This user has already been registered, Please log in");
+            return alert("This user email with " + email + " has already been registered, Please log in");
         }
 
 
@@ -63,7 +62,7 @@ function RegisterPage() {
             <div className="wrap-login100">
                 <form className="login100-form p-l-55 p-r-55 p-t-80"
                     onSubmit={handleSubmit(registerUser)}>
-                    <span className="login100-form-title">Sign Up!</span>
+                    <span className="login100-form-title">User Sign Up!</span>
                     <div className="wrap-input100" >
                         <input className="input100"
                             type="text" name="fullname"

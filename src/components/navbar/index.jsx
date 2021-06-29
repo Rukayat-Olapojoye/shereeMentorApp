@@ -33,6 +33,9 @@ function Navbar() {
 
 			{!state.isLoggedIn ? (
 				<>
+					<Link className="navlink" to='/registermentor'>
+						Become a Mentor
+					</Link>
 					<Link className="navlink" to='/register'>
 						Sign Up
 					</Link>

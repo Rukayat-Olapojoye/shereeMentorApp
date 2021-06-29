@@ -6,6 +6,7 @@ import Login from './pages/Login/login';
 import Register from './pages/Register/register';
 import FourOhFour from './pages/FourOhFour/404';
 import AppStates from './components/stateprovider';
+import RegisterMentor from './pages/RegisterMentor/registermentor';
 
 function App() {
 	return (
@@ -31,6 +32,10 @@ function App() {
 
 						<Route exact path='/mentorspage'>
 							<Mentors />
+						</Route>
+
+						<Route exact path='/registermentor'>
+							<RegisterMentor />
 						</Route>
 
 						<Route exact path='/'>
