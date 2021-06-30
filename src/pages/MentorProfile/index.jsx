@@ -3,7 +3,11 @@ import { useParams, Link } from 'react-router-dom';
 import { AppContext } from '../../components/stateprovider';
 
 import linkedin from '../../images/linkedin.svg';
+import heart from '../../images/heart.svg';
 import DefaultLayout from '../../layouts/default-layout';
+
+//import styles
+import './mentorprofile.css';
 
 function MentorProfile({ key }) {
 	const {
@@ -20,32 +24,32 @@ function MentorProfile({ key }) {
 		<DefaultLayout>
 			<div className="show-mentor">
 				<div className="green-div"></div>
-				<div>{currentMentor.current.image}</div>
+				<div className="mentor-image">{currentMentor.current.image}</div>
 				<h1 className="mentor-name">
-					History, I'm {currentMentor.current.name} from{' '}
+					Hi, I'm {currentMentor.current.name} from{' '}
 					{currentMentor.current.country}
 				</h1>
-				<p>
-					Experience {currentMentor.current.role} at{' '}
+				<p className="experience-para">
+					Experienced {currentMentor.current.role} at{' '}
 					{currentMentor.current.company}
 				</p>
 				<div className="SM-Link">
-					<img src={linkedin} alt="" />
+					<img className="linkedin icon" src={linkedin} alt="linkedin" />
 				</div>
 				<div className="small-boxes">
 					<ul>
-						<li>...</li>
+						<li className="ellipses">...</li>
 						<li>
-							<img src="heart.svg" alt="" />
+							<img className="icon" src={heart} alt="heart" />
 						</li>
 						<li>Ask a question</li>
 					</ul>
 				</div>
 				<div className="inline-headlist">
 					<ul>
-						<Link to="/About">About me</Link>
-						<Link to="/Reviews">Reviews</Link>
-						<Link to="Sessions">Group Sessions</Link>
+						<li><Link to="/About">About me</Link></li>
+						<li><Link to="/Reviews">Reviews</Link></li>
+						<li><Link to="/Sessions">Group Sessions</Link></li>	
 					</ul>
 				</div>
 				<div className="show-session">No upcoming session</div>
