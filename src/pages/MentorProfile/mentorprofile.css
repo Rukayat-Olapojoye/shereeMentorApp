@@ -1,0 +1,96 @@
+.show-mentor {
+    background-color: #ccc;
+    width: 100%;
+    height: 100vh;
+}
+
+.green-div {
+    width: 100%;
+    height: 300px;
+    background-color: rgb(3, 3, 54);
+}
+
+.mentor-image {
+    position: absolute;
+}
+
+.mentor-name {
+    text-align: center;
+    padding: 30px;
+    color: rgb(3, 3, 54);
+}
+
+.experience-para {
+    text-align: center;
+    font-size: 20px;
+    margin-top: -15px;
+    font-weight: 500;
+    color: rgb(3, 3, 54);
+}
+
+.SM-Link {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    background-color: #ccc;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+.icon:hover {
+    opacity: 0.8;
+}
+
+.small-boxes ul {
+    width: 100%;
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.small-boxes ul li {
+    padding: 10px;
+    list-style-type: none;
+    margin: 0px 10px;
+    font-size: 22px;
+    font-weight: 500;
+    background-color: #fff;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 3px 3px #999;
+}
+
+.small-boxes ul li:last-child {
+    background-color: rgb(3, 3, 54);
+    color: white;
+}
+
+.small-boxes ul li:first-child {
+    font-weight: 1000;
+}
+
+.inline-headlist ul {
+    width: 100%;
+    padding: 20px;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.inline-headlist ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0px 20px;
+}
+
+.show-session {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
