@@ -1,8 +1,14 @@
+import Navbar from '../components/navbar';
+import Footer from '../components/footer';
 
-function Layout() {
-    return (
-        <div>Hello </div>
-    );
+function DefaultLayout({ children }) {
+	return (
+		<>
+			<Navbar />
+			{children}
+			<Footer />
+		</>
+	);
 }
 
-export default Layout;
+export default DefaultLayout;
