@@ -1,10 +1,11 @@
 import { useContext } from 'react';
-import { MyContext } from './contextProvider';
-import MentorCard from '../components/mentor-card';
+import { AppContext } from '../../components/stateprovider';
+import MentorCard from '../../components/mentor-card';
+
 
 
 function MentorList() {
-    const { state } = useContext(MyContext);
+    const { state } = useContext(AppContext);
 
     return (
         <div className="mentor-list">
