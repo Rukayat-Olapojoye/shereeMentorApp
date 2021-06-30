@@ -4,12 +4,11 @@
 */
 
 /* Change any style here to match your design for your home page*/
-.example-page {
-	background: #aaa;
+
+/* ========STYLING MENTOR PREVIEW LAYOUT========= */
+.mentor-list {
 	width: 100%;
-	height: 100vh;
 	display: flex;
-	justify-content: center;
 	align-items: center;
-	font-size: 48px;
+	text-align: center;
 }
