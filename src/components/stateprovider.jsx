@@ -3,8 +3,6 @@ import { createContext, useReducer } from 'react';
 export const AppContext = createContext();
 
 const initialState = {
-
-    // initial state stuffs here
     isLoggedIn: false,
     userId: null,
     userEmail: null,

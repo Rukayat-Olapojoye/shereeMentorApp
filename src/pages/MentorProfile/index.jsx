@@ -8,22 +8,12 @@ function MentorProfile({ key }) {
 	const {
 		state: { mentors },
 	} = useContext(AppContext);
-	// useParams can get the value of a
-	// dynamic route parameter.
-	// eg: /mentors/:mentorid
+	// using params to get the value of the dynamic route parameter.
+	// In this case, /mentors/:mentorid
 	const params  = useParams();
 	const currentMentor = useRef(
 		mentors.find(mentor => mentor.id === parseInt(params.mentorid)),
 	);
-
-	/**
-	 * Only add a key when you're
-	 * in a loop.
-	 * use useEffect to find the currentMentor
-	 * for this page when this MentorProfile
-	 * component first loads.
-	 * store that currentMentor in a ref
-	 */
 
 
 	return (
