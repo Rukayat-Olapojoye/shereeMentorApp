@@ -7,6 +7,7 @@ import DefaultLayout from '../../layouts/default-layout';
 
 function MentorList() {
 	const { state } = useContext(AppContext);
+	state.isUserLoggedIn = true;
 
 	return (
 		<DefaultLayout>

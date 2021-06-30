@@ -1,5 +1,5 @@
 import DefaultLayout from '../../layouts/default-layout';
-import Mentorship3 from '../Home/Mentorship3.png';
+//import Mentorship3 from '../Home/Mentorship3.png';
 
 // scoped style for this file
 import './home.css';
@@ -7,10 +7,9 @@ import './home.css';
 function Home() {
 	return (
 		<DefaultLayout>
-			<div className="homepage">
-				<img src={Mentorship3} alt="mentorship Pic" />
+			<div className="home-container">
 				<h2>Welcome to Find-A-Mentor App</h2>
-				<h3>Use the NavBar to Navigate your Way!!!</h3>
+
 			</div>
 		</DefaultLayout>
 	);

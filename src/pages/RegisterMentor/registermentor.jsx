@@ -4,6 +4,7 @@ import Axios from 'axios';
 import { useHistory } from 'react-router-dom';
 import { AppContext } from '../../components/stateprovider';
 import './Registermentor.css';
+import DefaultLayout from '../../layouts/default-layout';
 //import { cloudinary } from 'cloudinary-core';
 
 function RegisterMentor() {
@@ -113,116 +114,115 @@ function RegisterMentor() {
 
     // Register form template
     return (
-        <div className="limiter">
-            <div className="wrap-login100">
-                <form className="login100-form p-l-55 p-r-55 p-t-80"
-                    onSubmit={handleSubmit(registerMentor)}>
-                    <span className="login100-form-title">Mentor Sign Up!</span>
-                    <div>
-                        <div className="wrap-input100" >
-                            <input className="input100"
-                                type="text" name="fullname"
-                                placeholder="Full Name"
-                                {...register("fullname", { required: true })} />
-                        </div>
+        <DefaultLayout>
+            <div className="container-div">
+                <div className="wrap-login100">
+                    <form className="login100-form p-l-55 p-r-55 p-t-80"
+                        onSubmit={handleSubmit(registerMentor)}>
+                        <span className="login100-form-title">Mentor Sign Up!</span>
+                        <div>
+                            <div className="wrap-input100" >
+                                <input className="input100"
+                                    type="text" name="fullname"
+                                    placeholder="Full Name"
+                                    {...register("fullname", { required: true })} />
+                            </div>
 
-                        <div className="wrap-input100">
-                            <input className="input100"
-                                type="text" name="username"
-                                placeholder="Username, e.g: jane.doe@gmail.com"
-                                {...register("email", { required: true })} />
-                        </div>
-                        <div className="wrap-input100">
-                            <input className="input100"
-                                type="password" name="pass"
-                                id="password"
-                                placeholder="Password"
-                                {...register("password", { required: true })} />
+                            <div className="wrap-input100">
+                                <input className="input100"
+                                    type="text" name="username"
+                                    placeholder="Username, e.g: jane.doe@gmail.com"
+                                    {...register("email", { required: true })} />
+                            </div>
+                            <div className="wrap-input100">
+                                <input className="input100"
+                                    type="password" name="pass"
+                                    id="password"
+                                    placeholder="Password"
+                                    {...register("password", { required: true })} />
 
-                        </div>
-                        <div className="wrap-input100 ">
-                            <input className="input100"
-                                type="password" name="Confirmpassword"
-                                id="confirmpassword"
-                                placeholder="Confirm Password"
-                                {...register("confirmpassword", { required: true })} />
-                        </div>
+                            </div>
+                            <div className="wrap-input100 ">
+                                <input className="input100"
+                                    type="password" name="Confirmpassword"
+                                    id="confirmpassword"
+                                    placeholder="Confirm Password"
+                                    {...register("confirmpassword", { required: true })} />
+                            </div>
 
-                        <div className="wrap-input100">
-                            <input className="input100"
-                                type="tel"
-                                name="contact"
-                                id="contact"
-                                placeholder="Phonenumber"
-                                {...register("contact", { required: true })} />
-                        </div>
+                            <div className="wrap-input100">
+                                <input className="input100"
+                                    type="tel"
+                                    name="contact"
+                                    id="contact"
+                                    placeholder="Phonenumber"
+                                    {...register("contact", { required: true })} />
+                            </div>
 
-                        <div className="wrap-input100">
-                            <input className="input100"
-                                type="text" name="country"
-                                placeholder="Country"
-                                {...register("country", { required: true })} />
-                        </div>
-                        <div className="wrap-input100" >
-                            <input className="input100"
-                                type="text" name="language"
-                                placeholder="Language"
-                                {...register("language", { required: true })} />
-                        </div>
-
-                    </div>
-
-                    {/* Second column div here */}
-                    <div>
-                        <div className="wrap-input100">
-                            <input className="input100"
-                                type="text" name="company"
-                                placeholder="Company"
-                                {...register("company", { required: true })} />
-
-                        </div>
-                        <div className="wrap-input100 ">
-                            <input className="input100"
-                                type="text" name="role"
-                                placeholder="Role"
-                                {...register("role", { required: true })} />
-
-                        </div>
-                        <div className="wrap-input100 ">
-                            <textarea
-                                // cols="100px"
-                                id="career"
-                                type="text" name="career"
-                                className="input100"
-                                placeholder="Add career interest here"
-                                {...register("career", { required: true })}
-                            />
+                            <div className="wrap-input100">
+                                <input className="input100"
+                                    type="text" name="country"
+                                    placeholder="Country"
+                                    {...register("country", { required: true })} />
+                            </div>
+                            <div className="wrap-input100" >
+                                <input className="input100"
+                                    type="text" name="language"
+                                    placeholder="Language"
+                                    {...register("language", { required: true })} />
+                            </div>
 
                         </div>
 
+                        {/* Second column div here */}
+                        <div>
+                            <div className="wrap-input100">
+                                <input className="input100"
+                                    type="text" name="company"
+                                    placeholder="Company"
+                                    {...register("company", { required: true })} />
 
-                        <div className="container-login100-form-btn">
-                            <h4>Upload a professional Head Shot.</h4>
-                            <input
-                                type="file"
-                                name="mentorimage"
-                                id="mentorimage"
-                                onChange={ImageSelectorHandler} />
+                            </div>
+                            <div className="wrap-input100 ">
+                                <input className="input100"
+                                    type="text" name="role"
+                                    placeholder="Role"
+                                    {...register("role", { required: true })} />
 
-                            <button onClick={ImageUploadHandler} className="button-upload">Upload Image </button>
+                            </div>
+                            <div className="wrap-input100 ">
+                                <textarea
+                                    // cols="100px"
+                                    id="career"
+                                    type="text" name="career"
+                                    className="input100"
+                                    placeholder="Add career interest here"
+                                    {...register("career", { required: true })}
+                                />
+
+                            </div>
+
+                            <div className="container-login100-form-btn">
+                                <h4>Upload a professional Head Shot.</h4>
+                                <input
+                                    type="file"
+                                    name="mentorimage"
+                                    id="mentorimage"
+                                    onChange={ImageSelectorHandler} />
+
+                                <button onClick={ImageUploadHandler}
+                                    className="button-upload">Upload Image </button>
+                            </div>
+
+                            <div className="container-login100-form-btn">
+                                <button className="login100-form-btn"> Sign Up</button>
+                            </div>
                         </div>
-
-                        <div className="container-login100-form-btn">
-                            <button className="login100-form-btn"> Sign Up</button>
-                        </div>
-                    </div>
-                </form>
-
+                    </form>
+                </div>
 
             </div>
-
-        </div>
-
+        </DefaultLayout>
     );
 }
 

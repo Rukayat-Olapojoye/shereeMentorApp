@@ -23,12 +23,16 @@ function Header() {
 				</div>
 				<div className="flex-head">
 					<input
+						className="search-input"
 						type="text"
 						name="search"
 						id="search"
 						placeholder="'Solape, 'Software Developer', or 'Microsoft'..."
 					/>
 					{/* <p>Become a member</p> */}
+					<Link className="login btn" to='/home'>
+						Home
+					</Link>
 
 					{!state.isUserLoggedIn ? (
 						<>
@@ -38,13 +42,19 @@ function Header() {
 							<Link to="/register" className="signup btn">
 								Sign up
 							</Link>
+
+							<Link to="/registermentor" className="signup btn">
+								Become a Mentor
+							</Link>
+
 						</>
 					) : (
 						<>
-							<Link to="/mentors">
+							<Link to="/mentors" className="signup btn">
 								<p>Find a mentor</p>
 							</Link>
-							<p onClick={logout}>Logout</p>
+
+							<button className="signup btn" onClick={logout}>Logout</button>
 						</>
 					)}
 				</div>
