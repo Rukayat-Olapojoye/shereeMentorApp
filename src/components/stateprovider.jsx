@@ -36,7 +36,10 @@ function reducer(state, action) {
     }
     if (action.type === 'REGISTER_MENTOR') {
         saveState.isLoggedIn = false;
+
+        // We need to push new mentor here
         saveState.mentorUser = action.payload.mentorUser;
+
 
     }
 

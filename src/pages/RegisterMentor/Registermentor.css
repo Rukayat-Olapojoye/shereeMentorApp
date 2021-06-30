@@ -182,11 +182,15 @@ button:hover {
         }
 
         .button-upload{
-          border: 2px black solid;
+          margin-top: 10px;
+          border: 1px black solid;
           border-radius:2px;
           padding: 2px;
         }
 
+.button-upload:hover{
+background-color: grey;
+}
 
   .p-b-9 {padding-bottom: 9px;}
   .p-t-80 {padding-top: 80px;}

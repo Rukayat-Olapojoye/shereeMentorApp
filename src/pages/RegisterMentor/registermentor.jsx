@@ -37,8 +37,8 @@ function RegisterMentor() {
         Axios.post(
             "https://api.cloudinary.com/v1_1/ddg54qg6i/image/upload", formData)
             .then((response) => {
+                console.log(response)
                 if (response.statusText === "Ok") {
-
                     // Dispatch to update our image in the state.
                     context.dispatch({
                         type: 'SAVE_IMAGE',
@@ -78,18 +78,16 @@ function RegisterMentor() {
 
         // create new mentor object and save it to local storage
         const newMentor = {
-            fullname: fullname,
-            email: email,
-            password: password,
-            userId: Date.now(),
-            career: career,
-            language: language,
+            id: Date.now(),
+            name: fullname,
             country: country,
             company: company,
             role: role,
+            advice: career,
             hobbies: hobbies,
             contact: contact,
-            mentorImage: context.state.imageUploaded,
+            image: context.state.imageUploaded,
+            languages: language,
 
         };
 
@@ -204,7 +202,7 @@ function RegisterMentor() {
 
 
                         <div className="container-login100-form-btn">
-                            <h4>Upload a profession Head Shot.</h4>
+                            <h4>Upload a professional Head Shot.</h4>
                             <input
                                 type="file"
                                 name="mentorimage"

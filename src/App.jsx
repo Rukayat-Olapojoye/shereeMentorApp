@@ -30,7 +30,7 @@ function App() {
 
 						{/* render Mentors Page Component when we hit /mentorspage*/}
 
-						<Route exact path='/mentorspage'>
+						<Route exact path='/mentors'>
 							<Mentors />
 						</Route>
 
