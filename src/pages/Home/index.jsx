@@ -1,24 +1,19 @@
-import React from 'react';
-//import Mentorship3 from "../Home/Mentorship3.png";
+import DefaultLayout from '../../layouts/default-layout';
+import Mentorship3 from '../Home/Mentorship3.png';
 
 // scoped style for this file
 import './home.css';
 
 function Home() {
 	return (
-		<div className="home-container">
-			{/* <div className="home-img">
-				<img src={Mentorship3}
-					alt="mentorship Pic"
-				/>
-			</div> */}
-
-			<div>
-				<h1 className="home-message">Welcome to FindAMentor App</h1>
+		<DefaultLayout>
+			<div className="homepage">
+				<img src={Mentorship3} alt="mentorship Pic" />
+				<h2>Welcome to Find-A-Mentor App</h2>
+				<h3>Use the NavBar to Navigate your Way!!!</h3>
 			</div>
-		</div>
+		</DefaultLayout>
 	);
-
 }
 
 export default Home;
