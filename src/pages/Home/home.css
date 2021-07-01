@@ -32,20 +32,11 @@
         background-size:contain;
         background-position: center;
         position: relative;
+        
     }
 
     .home-message{
         -webkit-animation: zoom 10s;
         animation: zoom 10s;
-        
-        /* pust some styling here for text */
+                /* pust some styling here for text */
     }
-              /* .home-img{
-    background-image: url("../Home/Mentorship3.png");
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-              } */
-
-      

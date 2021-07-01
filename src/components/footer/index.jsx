@@ -1,6 +1,6 @@
 import SocialMediaIcons from '../social-media-icons';
 import './footer.css';
-
+import { Link } from 'react-router-dom';
 function Footer() {
 	return (
 		<footer>
@@ -18,8 +18,9 @@ function Footer() {
 				<hr />
 				<div className="bold list">
 					<ul>
-						<li>Find a mentor</li>
-						<li>Become a mentor</li>
+						<li><Link to='/'>Find a mentor</Link></li>
+
+						<li><Link to='/registermentor'>Become a mentor</Link></li>
 					</ul>
 				</div>
 				<div className="list">

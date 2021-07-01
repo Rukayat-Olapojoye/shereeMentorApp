@@ -14,13 +14,14 @@ body {
     background-color: #fff;
 }
 
- .limiter {
-    width: 100%;
-     margin:30px auto;
-  }
+  .limiter {
+        width: 100%;
+        height: 100vh;
+         margin:40px auto -140px;
+      }
   
 .input100 {
-    font-family: Ubuntu-Bold;
+     font-family: Ubuntu-Bold;
     font-size: 15px;
     color: #333;
     line-height: 1.2;
@@ -31,14 +32,15 @@ body {
     border-radius: 15px;
     padding:20px;
     margin: 15px auto;
-}
+  
+  }
 .wrap-input100 {
   width: 100%;
   background-color: #fff;
   border-radius: 15px;
   position: relative;
   z-index: 1;
-  margin-left: 25px;
+  
 }
 .wrap-input100 input {
     outline: none;
@@ -159,8 +161,9 @@ button:hover {
     width: 100%;
     background-color: #3a3a3a;
     padding-top: 20px;
-    padding-bottom: 20px;
-    margin: -80px auto;
+   padding: 0 20px;
+    margin: 15px;
+    margin-left:25px ;
   }
 
      

@@ -6,7 +6,7 @@ function MentorCard({ mentor }) {
 			<div>
 				<img src={mentor.image} alt="mentor" />
 				<div className="overlay">
-					<Link className="mentor-link" to={`/mentors/${mentor.id}`}>
+					<Link className="mentor-link" target="_blank" to={`/mentors/${mentor.id}`}>
 						<h1>{mentor.name}</h1>
 					</Link>
 					<span>{mentor.country}</span>

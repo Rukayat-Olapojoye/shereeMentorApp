@@ -24,7 +24,7 @@
 	width: 100%;
 	background-color: #ddd;
 	padding: 10px;
-	/* position: fixed; */
+  /* position: fixed; */
 	top: 0;
 	cursor: pointer;
 	/* z-index: 9; */
@@ -57,7 +57,7 @@
 	color: rgb(3, 3, 54);
 }
 
-input[type='text'] {
+.search-input {
 	width: 400px;
 	padding: 14px;
 	border-radius: 5px;
@@ -65,7 +65,7 @@ input[type='text'] {
 }
 
 #search {
-	margin-left: -400px;
+	margin-left: -500px;
 	margin-right: 50px;
 	border: 2px solid rgb(3, 3, 54);
 }
@@ -76,6 +76,8 @@ input[type='text'] {
 }
 
 .btn {
+	padding: 5px 20px;
+	margin: 5px;
 	margin-left: 60px;
 	border-radius: 5px;
 	font-size: 18px;
@@ -89,8 +91,8 @@ input[type='text'] {
 }
 
 .login, .signup {
-	padding: 0px 45px;
-	margin: 0px 0px 0px 30px;
+	padding: 0px 35px;
+	margin: 0px 0px 0px 20px;
 	box-shadow: 1px 1px 1px 1px #999;
 	font-family: sans-serif;
 	color: #fff;
