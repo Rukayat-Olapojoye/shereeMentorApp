@@ -27,11 +27,12 @@
         flex-direction: row;
         align-items: center;
         justify-content:space-evenly;
-        background-image: url("../Home//mentoring-pic-1.jpg");
+        background-image: url("../Home/clip-art.jpg");
         background-attachment: fixed;
-        background-size:contain;
+        background-size: contain;
         background-position: center;
         position: relative;
+        object-fit: cover;
     }
 
     .home-message{
