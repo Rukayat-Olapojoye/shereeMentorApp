@@ -3,6 +3,7 @@ import { useForm } from 'react-hook-form';
 import { useHistory } from 'react-router-dom';
 import { AppContext } from '../../components/stateprovider';
 import DefaultLayout from '../../layouts/default-layout';
+//import mentorData from '../../store/mentor-data';
 import './login.css';
 //import {CookieProvider} from 'react-cookie';
 
@@ -21,13 +22,24 @@ function LoginPage() {
         //     return alert("Please provide a Password");
         // }
 
-        const user = localStorage.getItem(email);
+        let user = null;
+        // try to find a  regular user
+        if (localStorage.getItem(email)) {
+            user = JSON.parse(localStorage.getItem(email))
+        }
+
+        // if that failed, find a mentor instead
+        if (!user && localStorage.getItem('mentor-list')) {
+            user = JSON
+                .parse(localStorage.getItem('mentor-list'))
+                .find(_mentor => _mentor.email === email);
+        }
 
         if (!user) {
             return alert('An account for this email was not found');
         }
 
-        const userdata = JSON.parse(user);
+        const userdata = user;
         console.log(userdata);
 
         if (password !== userdata.password) {

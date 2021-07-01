@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { createContext, useReducer } from 'react';
 import mentorData from '../store/mentor-data';
 
@@ -27,8 +28,14 @@ function reducer(state, action) {
     }
     if (action.type === 'REGISTER_MENTOR') {
         saveState.isLoggedIn = false;
+        saveState.mentors = [action.payload.mentorUser, ...saveState.mentors];
         //saveState.mentorUser = action.payload.mentorUser;
-        saveState.mentorData.unshift(action.payload.mentorUser)
+        //saveState.mentors.unshift(action.payload.mentorUser)
+    }
+
+    if (action.type === 'UPDATE_MENTORLIST') {
+        saveState.isLoggedIn = false;
+        saveState.mentors = [...action.payload, ...saveState.mentors];
     }
 
     if (action.type === 'LOGIN') {
@@ -52,6 +59,17 @@ export default function AppStates({ children }) {
         state: appstate,
         dispatch: dispatch,
     };
+
+    useEffect(() => {
+        let storage = localStorage.getItem('mentor-list');
+        let mentorListInStorage = storage ? JSON.parse(storage) : [];
+
+        dispatch({
+            type: 'UPDATE_MENTORLIST',
+            payload: mentorListInStorage
+        })
+
+    }, [])
 
     return (
         <AppContext.Provider value={ContextObject}>

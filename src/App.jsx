@@ -7,6 +7,7 @@ import FourOhFour from './pages/FourOhFour/404';
 import AppStates from './components/stateprovider';
 import MentorProfile from './pages/MentorProfile';
 import RegisterMentor from './pages/RegisterMentor/registermentor';
+import SearchPage from './pages/SearchPage';
 
 function App() {
 	return (
@@ -41,6 +42,11 @@ function App() {
 					<Route exact path="/registermentor">
 						<RegisterMentor />
 					</Route>
+
+					<Route path="/search">
+						<SearchPage />
+					</Route>
+
 
 					<Route exact path="/">
 						<Home />

@@ -7,13 +7,11 @@ import DefaultLayout from '../../layouts/default-layout';
 
 function MentorList() {
 	const { state } = useContext(AppContext);
-	state.isUserLoggedIn = true;
-
 	return (
 		<DefaultLayout>
 			<div className="heading-text">
-			<h1>Our Mentors</h1>
-			<p className="first-para">Browse our network of mentors to find the right fit.</p>
+				<h1>Our Mentors</h1>
+				<p className="first-para">Browse our network of mentors to find the right fit.</p>
 			</div>
 			<div className="mentor-list">
 				<ul>

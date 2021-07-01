@@ -65,7 +65,7 @@
 }
 
 #search {
-	margin-left: -400px;
+	margin-left: -500px;
 	margin-right: 50px;
 	border: 2px solid rgb(3, 3, 54);
 }
@@ -76,12 +76,9 @@
 }
 
 .btn {
-<<<<<<< HEAD
-	padding: 10px 30px;
-	margin: 10px;
-=======
+	padding: 5px 20px;
+	margin: 5px;
 	margin-left: 60px;
->>>>>>> cbc8b42339659caf561c44e1a2ee0aab55efd6be
 	border-radius: 5px;
 	font-size: 18px;
 	font-weight: 600;
@@ -94,8 +91,8 @@
 }
 
 .login, .signup {
-	padding: 0px 45px;
-	margin: 0px 0px 0px 30px;
+	padding: 0px 35px;
+	margin: 0px 0px 0px 20px;
 	box-shadow: 1px 1px 1px 1px #999;
 	font-family: sans-serif;
 	color: #fff;
