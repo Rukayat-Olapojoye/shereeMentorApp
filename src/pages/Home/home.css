@@ -32,11 +32,7 @@
         background-size: contain;
         background-position: center;
         position: relative;
-<<<<<<< HEAD
         object-fit: cover;
-=======
-        
->>>>>>> 01c68bb562f29e7aff393d7ad61622eda500e216
     }
 
     .home-message{
