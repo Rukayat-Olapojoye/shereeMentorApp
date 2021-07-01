@@ -24,7 +24,9 @@ function MentorProfile({ key }) {
 		<DefaultLayout>
 			<div className="show-mentor">
 				<div className="green-div"></div>
-				<div className="mentor-image">{currentMentor.current.image}</div>
+				<div className="mentor-image">
+					<img src={currentMentor.current.image} alt={currentMentor.current.name} />
+				</div>
 				<h1 className="mentor-name">
 					Hi, I'm {currentMentor.current.name} from{' '}
 					{currentMentor.current.country}
@@ -49,7 +51,7 @@ function MentorProfile({ key }) {
 					<ul>
 						<li><Link to="/About">About me</Link></li>
 						<li><Link to="/Reviews">Reviews</Link></li>
-						<li><Link to="/Sessions">Group Sessions</Link></li>	
+						<li><Link to="/Sessions">Group Sessions</Link></li>
 					</ul>
 				</div>
 				<div className="show-session">No upcoming session</div>

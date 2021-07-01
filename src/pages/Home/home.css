@@ -32,21 +32,15 @@
         background-size: contain;
         background-position: center;
         position: relative;
+<<<<<<< HEAD
         object-fit: cover;
+=======
+        
+>>>>>>> 01c68bb562f29e7aff393d7ad61622eda500e216
     }
 
     .home-message{
         -webkit-animation: zoom 10s;
         animation: zoom 10s;
-        
-        /* pust some styling here for text */
+                /* pust some styling here for text */
     }
-              /* .home-img{
-    background-image: url("../Home/Mentorship3.png");
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-              } */
-
-      

@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import { AppContext } from '../stateprovider';
 import { Link, useHistory } from 'react-router-dom';
+import Search from '../search';
 //import { BrowserRouter as Router } from 'react-router-dom';
 
 import './navstyle.css';
@@ -22,15 +23,13 @@ function Header() {
 					</Link>
 				</div>
 				<div className="flex-head">
-					<input
-						type="text"
-						name="search"
-						id="search"
-						placeholder="'Solape, 'Software Developer', or 'Microsoft'..."
-					/>
+					<Search />
 					{/* <p>Become a member</p> */}
+					<Link className="login btn" to='/home'>
+						Home
+					</Link>
 
-					{!state.isUserLoggedIn ? (
+					{!state.isLoggedIn ? (
 						<>
 							<Link to="/login" className="login btn">
 								Login
@@ -38,13 +37,22 @@ function Header() {
 							<Link to="/register" className="signup btn">
 								Sign up
 							</Link>
+
+							<Link to="/registermentor" className="signup btn">
+								Become a Mentor
+							</Link>
+							<Link to="/mentors" className="signup btn">
+								<p>Find a mentor</p>
+							</Link>
+
 						</>
 					) : (
 						<>
-							<Link to="/mentors">
+							<Link to="/mentors" className="signup btn">
 								<p>Find a mentor</p>
 							</Link>
-							<p onClick={logout}>Logout</p>
+
+							<button className="signup btn" onClick={logout}>Logout</button>
 						</>
 					)}
 				</div>
