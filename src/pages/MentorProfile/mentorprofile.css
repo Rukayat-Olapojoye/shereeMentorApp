@@ -1,4 +1,5 @@
 .show-mentor {
+    margin-top: 20px;
     background-color: #ccc;
     width: 100%;
     height: 100vh;
@@ -11,8 +12,9 @@
 }
 
 .mentor-image {
-    position: absolute;
-}
+     position: absolute;
+     margin-left: 200px;
+     }
 
 .mentor-name {
     text-align: center;

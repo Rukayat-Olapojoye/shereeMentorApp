@@ -1,7 +1,6 @@
 import { useContext, useRef } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { AppContext } from '../../components/stateprovider';
-
 import linkedin from '../../images/linkedin.svg';
 import heart from '../../images/heart.svg';
 import DefaultLayout from '../../layouts/default-layout';
@@ -15,6 +14,7 @@ function MentorProfile({ key }) {
 	} = useContext(AppContext);
 	// using params to get the value of the dynamic route parameter.
 	// In this case, /mentors/:mentorid
+
 	const params = useParams();
 	const currentMentor = useRef(
 		mentors.find(mentor => mentor.id === parseInt(params.mentorid)),
@@ -23,7 +23,7 @@ function MentorProfile({ key }) {
 	return (
 		<DefaultLayout>
 			<div className="show-mentor">
-				<div className="green-div"></div>
+				{/* <div className="green-div"></div> */}
 				<div className="mentor-image">
 					<img src={currentMentor.current.image} alt={currentMentor.current.name} />
 				</div>

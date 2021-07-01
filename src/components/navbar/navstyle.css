@@ -1,36 +1,15 @@
-/* .navbar {
-	background: #92939b;
-	color: white;
-	margin-bottom: 30px;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-}
-
-.navlink {
-	display: inline-block;
-	padding: 10px 15px;
-	color: rgb(8, 8, 8);
-	cursor: pointer;
-}
-
-.navlink:hover {
-	text-decoration: underline;
-} */
 
 /* ==========HEADER============ */
 .header {
 	width: 100%;
-	background-color: #ddd;
+		background-color: #ddd;
 	padding: 10px;
-  /* position: fixed; */
-	top: 0;
+ 	top: 0;
 	cursor: pointer;
-	/* z-index: 9; */
-
 	display: flex;
-	align-items: center;
+	flex-direction: row;
+	align-items:center;
+	justify-content: center;
 }
 
 .header p {
@@ -47,7 +26,7 @@
 
 .flex-head {
 	display: flex;
-	margin: 20px 0px 20px 500px;
+		margin: 10px 0px 10px 500px;
 }
 
 .head-text,
@@ -76,9 +55,8 @@
 }
 
 .btn {
-	padding: 5px 20px;
-	margin: 5px;
-	margin-left: 60px;
+	height: 60px;
+	margin-left: 30px;
 	border-radius: 5px;
 	font-size: 18px;
 	font-weight: 600;
@@ -91,15 +69,15 @@
 }
 
 .login, .signup {
-	padding: 0px 35px;
-	margin: 0px 0px 0px 20px;
+	padding: 10px 45px;
+	margin: 0px 0px 0px 10px;
 	box-shadow: 1px 1px 1px 1px #999;
 	font-family: sans-serif;
 	color: #fff;
 }
 
 .login {
-	margin-left: 80px;
+	margin-left: 60px;
 	border: 1px solid #999;
 	color: rgb(3, 3, 54);
 }

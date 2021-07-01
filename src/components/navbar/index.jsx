@@ -25,7 +25,7 @@ function Header() {
 				<div className="flex-head">
 					<Search />
 					{/* <p>Become a member</p> */}
-					<Link className="login btn" to='/home'>
+					<Link className="signup btn" to='/home'>
 						Home
 					</Link>
 
@@ -42,16 +42,15 @@ function Header() {
 								Become a Mentor
 							</Link>
 							<Link to="/mentors" className="signup btn">
-								<p>Find a mentor</p>
+								Find a mentor
 							</Link>
 
 						</>
 					) : (
 						<>
 							<Link to="/mentors" className="signup btn">
-								<p>Find a mentor</p>
+								Find a mentor
 							</Link>
-
 							<button className="signup btn" onClick={logout}>Logout</button>
 						</>
 					)}
