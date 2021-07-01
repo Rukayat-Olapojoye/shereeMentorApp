@@ -1,5 +1,5 @@
 import DefaultLayout from '../../layouts/default-layout';
-import clipart from '../Home/clip-art.jpg';
+import mentoringpic from '../Home/mentoring-pic.jpg';
 
 // scoped style for this file
 import './home.css';
