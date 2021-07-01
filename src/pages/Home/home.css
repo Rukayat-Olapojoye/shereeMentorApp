@@ -14,26 +14,25 @@
 	font-size: 64px;
 } */
 
- /* .homepage{
-        border-radius: 5px;
-        border: 2px solid #92939b;
-        margin: 60px auto;
-        width: 100%;
-              } */
-
+ 
      .home-container {
-        height: 100vh;
+        height: 700px;
         display:flex;
         flex-direction: row;
         align-items: center;
-        justify-content:space-evenly;
-        background-image: url("../Home//mentoring-pic-1.jpg");
-        background-attachment: fixed;
+        justify-content:center;
+        /* background-image: url("../Home/mentoring-pic.jpg"); */
+        /* background-attachment: fixed;
         background-size:contain;
-        background-position: center;
+        background-position: center; */
         position: relative;
+        /* object-fit:cover; */
         
     }
+.home-img{
+    width:400px
+    
+              }
 
     .home-message{
         -webkit-animation: zoom 10s;
