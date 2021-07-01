@@ -1,21 +1,110 @@
-nav {
-	background: rgb(9, 71, 100);
+/* .navbar {
+	background: #92939b;
 	color: white;
-}
-
-ul {
+	margin-bottom: 30px;
 	display: flex;
-	justify-content: center;
+	flex-direction: row;
 	align-items: center;
-	gap: 20px;
+	justify-content: center;
 }
 
-li {
-	list-style-type: none;
+.navlink {
+	display: inline-block;
+	padding: 10px 15px;
+	color: rgb(8, 8, 8);
+	cursor: pointer;
 }
 
-a {
-	display: block;
-	padding: 20px;
-	color: white;
+.navlink:hover {
+	text-decoration: underline;
+} */
+
+/* ==========HEADER============ */
+.header {
+	width: 100%;
+	background-color: #ddd;
+	padding: 10px;
+  /* position: fixed; */
+	top: 0;
+	cursor: pointer;
+	/* z-index: 9; */
+
+	display: flex;
+	align-items: center;
+}
+
+.header p {
+	margin: 10px;
+	padding-top: 10px;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.header p:hover {
+	transform: translateX(-3px);
+	text-decoration: underline;
+}
+
+.flex-head {
+	display: flex;
+	margin: 20px 0px 20px 500px;
+}
+
+.head-text,
+.head-para {
+	margin-left: 30px;
+	font-family: sans-serif;
+	color: rgb(3, 3, 54);
+}
+
+.search-input {
+	width: 400px;
+	padding: 14px;
+	border-radius: 5px;
+	margin: 10px;
+}
+
+#search {
+	margin-left: -500px;
+	margin-right: 50px;
+	border: 2px solid rgb(3, 3, 54);
+}
+
+#search::placeholder {
+	font-size: 16px;
+	width: max-content;
+}
+
+.btn {
+	padding: 5px 20px;
+	margin: 5px;
+	margin-left: 60px;
+	border-radius: 5px;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.btn:hover {
+	background-color: #fff;
+	color: rgb(3, 3, 54);
+	border: none;
+}
+
+.login, .signup {
+	padding: 0px 35px;
+	margin: 0px 0px 0px 20px;
+	box-shadow: 1px 1px 1px 1px #999;
+	font-family: sans-serif;
+	color: #fff;
+}
+
+.login {
+	margin-left: 80px;
+	border: 1px solid #999;
+	color: rgb(3, 3, 54);
+}
+
+.signup {
+	background-color: rgb(3, 3, 54);
+	border: none;
 }

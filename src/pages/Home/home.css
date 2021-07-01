@@ -4,7 +4,7 @@
 */
 
 /* Change any style here to match your design for your home page*/
-.home {
+/* .home {
 	background: #dedede;
 	width: 100%;
 	height: 100vh;
@@ -12,4 +12,35 @@
 	justify-content: center;
 	align-items: center;
 	font-size: 64px;
-}
+} */
+
+ /* .homepage{
+        border-radius: 5px;
+        border: 2px solid #92939b;
+        margin: 60px auto;
+        width: 100%;
+              } */
+
+     .home-container {
+        height: 100vh;
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:space-evenly;
+        background-image: url("../Home/clip-art.jpg");
+        background-attachment: fixed;
+        background-size: contain;
+        background-position: center;
+        position: relative;
+<<<<<<< HEAD
+        object-fit: cover;
+=======
+        
+>>>>>>> 01c68bb562f29e7aff393d7ad61622eda500e216
+    }
+
+    .home-message{
+        -webkit-animation: zoom 10s;
+        animation: zoom 10s;
+                /* pust some styling here for text */
+    }
