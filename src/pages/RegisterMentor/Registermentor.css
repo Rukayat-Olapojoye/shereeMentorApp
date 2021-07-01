@@ -18,7 +18,7 @@ body {
         width: 100%;
         margin: 30px auto -60px;
         height: 1000px;
-      }
+  }
   
 .input100 {
     font-family: Ubuntu-Bold;
@@ -131,17 +131,13 @@ button:hover {
   } */
   
   .wrap-login100 {
-<<<<<<< HEAD
-    width: 400px;
-=======
     width: 450px;
->>>>>>> fb3bb7e4a82a68b5940812236a177a1ed76c35f7
     margin:auto;
     background: #fff;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
-          }
+  }
   
   .login100-form {
      width: 100%;
