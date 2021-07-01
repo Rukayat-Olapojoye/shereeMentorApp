@@ -17,20 +17,12 @@ body {
   .limiter {
         width: 100%;
         height: 100vh;
-<<<<<<< HEAD
-         margin:40px auto -140px;
-=======
          margin:80px auto -160px;
->>>>>>> fb3bb7e4a82a68b5940812236a177a1ed76c35f7
       }
   
 .input100 {
      font-family: Ubuntu-Bold;
-<<<<<<< HEAD
-    font-size: 15px;
-=======
     font-size: 18px;
->>>>>>> fb3bb7e4a82a68b5940812236a177a1ed76c35f7
     color: #333;
     line-height: 1.2;
     display: block;
@@ -88,7 +80,7 @@ a {
 	font-family: Ubuntu-Regular;
 	font-size: 14px;
 	line-height: 1.7;
-	color: #666666;
+	color: #666;
 	margin: 0px;
 }
 

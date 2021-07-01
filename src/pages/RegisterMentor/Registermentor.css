@@ -14,11 +14,11 @@ body {
     background-color: #fff;
 }
 
-  .container-div {
-        width: 100%;
-        margin: 30px auto -60px;
-        height: 1000px;
-  }
+.container-div {
+    width: 100%;
+    margin: 30px auto -60px;
+    height: 1000px;
+}
   
 .input100 {
     font-family: Ubuntu-Bold;
