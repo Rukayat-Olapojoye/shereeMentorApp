@@ -49,9 +49,8 @@ function Header() {
 					) : (
 						<>
 							<Link to="/mentors" className="signup btn">
-								<p>Find a mentor</p>
+								Find a mentor
 							</Link>
-
 							<button className="signup btn" onClick={logout}>Logout</button>
 						</>
 					)}

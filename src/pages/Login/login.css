@@ -6,7 +6,11 @@
 }
 .input100 {
       font-family: Ubuntu-Bold;
+<<<<<<< HEAD
     font-size: 15px;
+=======
+    font-size: 18px;
+>>>>>>> fb3bb7e4a82a68b5940812236a177a1ed76c35f7
     color: #333;
     line-height: 1.2;
     display: block;
@@ -60,7 +64,7 @@ body {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #212529;
+    color: rgb(3, 3, 54);
     background-color: #fff;
 }
 
@@ -130,7 +134,7 @@ button:hover {
       }
        */
     .wrap-login100 {
-     width: 400px;
+     width: 450px;
     margin:auto;
     background: #fff;
     border-radius: 20px;
@@ -152,7 +156,7 @@ button:hover {
     display: block;
     position: absolute;
     width: 100%;
-    background-color: #3a3a3a;
+    background-color: rgb(3, 3, 54);
     padding-top: 20px;
     padding-bottom: 20px;
     margin: -80px auto;
@@ -175,7 +179,7 @@ button:hover {
     padding: 10px 20px;
     width: 100%;
     height: 50px;
-    background-color: #3a3a3a;
+    background-color: rgb(3, 3, 54);
     border-radius: 25px;
       font-family: Ubuntu-Bold;
     font-size: 15px;
