@@ -54,9 +54,9 @@ function MentorProfile({ key }) {
 				</div>
 				<div className="inline-headlist">
 					<ul>
-						<li><Link to="/about"><span className=".list-span">About me</span></Link></li>
-						<li><Link to="/reviews"><span className=".list-span">Reviews</span></Link></li>
-						<li><Link to="/sessions"><span className=".list-span">Group Sessions</span></Link></li>
+						<li><span className=".list-span">About me</span></li>
+						<li><span className=".list-span">Reviews</span></li>
+						<li><span className=".list-span">Group Sessions</span></li>
 					</ul>
 				</div>
 
