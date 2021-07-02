@@ -66,7 +66,7 @@ function LoginPage() {
                         className="login100-form  p-l-55 p-r-55 p-t-80"
                         onSubmit={handleSubmit(Userlogin)}
                     >
-                        <span className="login100-form-title">Sign In</span>
+                        <span className="login100-form-title">Login</span>
                         <div className="wrap-input100">
                             <input
                                 className="input100"
@@ -90,7 +90,7 @@ function LoginPage() {
                         <div className="container-login100-form-btn">
                             <button className="login100-form-btn" type="submit">
                                 {' '}
-                                Sign in
+                                Login
                             </button>
                         </div>
 

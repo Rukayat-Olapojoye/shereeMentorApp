@@ -4,13 +4,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 .input100 {
-      font-family: Ubuntu-Bold;
-<<<<<<< HEAD
-    font-size: 15px;
-=======
+    font-family: Ubuntu-Bold;
     font-size: 18px;
->>>>>>> fb3bb7e4a82a68b5940812236a177a1ed76c35f7
     color: #333;
     line-height: 1.2;
     display: block;
@@ -22,6 +19,7 @@
     margin: 15px;
     margin-left:25px ;
 }
+
 .wrap-input100 {
   width: 100%;
   background-color: #fff;
@@ -102,14 +100,14 @@ button:hover {
 }
     .txt1 {
         font-family: Ubuntu-Regular;
-        font-size: 15px;
+        font-size: 18px;
         color: #999999;
         line-height: 1.4;
       }
       
        .txt3 {
         font-family: Ubuntu-Bold;
-        font-size: 15px;
+        font-size: 18px;
         color: #333;
         line-height: 1.4;
         text-transform: uppercase;
@@ -181,7 +179,7 @@ button:hover {
     height: 50px;
     background-color: rgb(3, 3, 54);
     border-radius: 25px;
-      font-family: Ubuntu-Bold;
+    font-family: sans-serif;
     font-size: 15px;
     color: #fff;
     line-height: 1.2;
@@ -196,7 +194,8 @@ button:hover {
       .p-r-55 {padding-right: 55px;}
      
       .login100-form-btn:hover {
-        background-color: #0a0a0a;
+        background-color: #fff;
+        color: rgb(3, 3, 54);
       }
       .input100:focus + .focus-input100 {
         width: calc(100% + 20px);

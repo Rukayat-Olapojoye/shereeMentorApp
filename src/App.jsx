@@ -8,6 +8,7 @@ import AppStates from './components/stateprovider';
 import MentorProfile from './pages/MentorProfile';
 import RegisterMentor from './pages/RegisterMentor/registermentor';
 import SearchPage from './pages/SearchPage';
+import ChatMentor from './pages/ChatMentor/chatmentor';
 
 function App() {
 	return (
@@ -47,6 +48,9 @@ function App() {
 						<SearchPage />
 					</Route>
 
+					<Route path="/chatmentor">
+						<ChatMentor />
+					</Route>
 
 					<Route exact path="/">
 						<Home />

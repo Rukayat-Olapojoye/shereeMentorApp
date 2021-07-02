@@ -2,13 +2,10 @@
 // import { useState } from "react";
 import { useHistory } from "react-router";
 
-<<<<<<< HEAD
-=======
 
 
 
 
->>>>>>> fb3bb7e4a82a68b5940812236a177a1ed76c35f7
 const Search = () => {
 
     //  const [search, setSearch] = useState("")
@@ -23,7 +20,6 @@ const Search = () => {
     return (
 
         <input
-            className="search-input"
             type="text"
             name="search"
             id="search"

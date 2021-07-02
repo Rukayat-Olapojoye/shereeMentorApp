@@ -12,22 +12,20 @@ function MentorProfile({ key }) {
 	const {
 		state: { mentors },
 	} = useContext(AppContext);
+	
 	// using params to get the value of the dynamic route parameter.
 	// In this case, /mentors/:mentorid
-
 	const params = useParams();
 	const currentMentor = useRef(
 		mentors.find(mentor => mentor.id === parseInt(params.mentorid)),
 	);
 
+	
+
 	return (
 		<DefaultLayout>
 			<div className="show-mentor">
-<<<<<<< HEAD
-				<div className="green-div"></div>
-=======
-				{/* <div className="green-div"></div> */}
->>>>>>> fb3bb7e4a82a68b5940812236a177a1ed76c35f7
+				<div className="blue-div"></div>
 				<div className="mentor-image">
 					<img src={currentMentor.current.image} alt={currentMentor.current.name} />
 				</div>
@@ -48,17 +46,49 @@ function MentorProfile({ key }) {
 						<li>
 							<img className="icon" src={heart} alt="heart" />
 						</li>
-						<li>Ask a question</li>
+						<li><Link to='/chatmentor'><span>Ask a question</span></Link></li>
 					</ul>
 				</div>
 				<div className="inline-headlist">
 					<ul>
-						<li><Link to="/About">About me</Link></li>
-						<li><Link to="/Reviews">Reviews</Link></li>
-						<li><Link to="/Sessions">Group Sessions</Link></li>
+						<li><Link to="/about"><span className=".list-span">About me</span></Link></li>
+						<li><Link to="/reviews"><span className=".list-span">Reviews</span></Link></li>
+						<li><Link to="/sessions"><span className=".list-span">Group Sessions</span></Link></li>
 					</ul>
 				</div>
-				<div className="show-session">No upcoming session</div>
+
+				<section>
+					<div className="about">
+						<h2 id="about-heading">About me</h2>
+						<ul id="about-info">
+							<li>
+								{currentMentor.current.role} at {currentMentor.current.company}.
+								Passionate about building, development and creating solutions<br></br>
+								that make people's lives easier.
+							</li>		
+							<li>I enjoy <strong>{currentMentor.current.hobbies}</strong></li>
+							<li>I'm mentoring in <strong>{currentMentor.current.expertise}</strong></li>
+							<li>I speak <strong>{currentMentor.current.languages}</strong></li>
+							<li>Ask me about <strong>{currentMentor.current.advice}</strong></li>		
+						</ul>
+						<hr />	
+							<p id="contact">+{currentMentor.current.contact}</p>
+							<p><strong>Joined</strong><span className="date">June, 2021</span></p>
+						<hr />	
+					</div>
+				</section>
+				<section>
+					<div className="reviews">
+					<h2>Reviews</h2>
+					<p>No reviews yet</p>				
+					</div>
+				</section>
+				<section>
+					<div className="session">
+					<h2>Session</h2>
+					<p>No upcoming Sessions</p>				
+					</div>
+				</section>
 			</div>
 		</DefaultLayout>
 	);

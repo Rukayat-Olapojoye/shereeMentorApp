@@ -5,7 +5,7 @@ function Footer() {
 	return (
 		<footer>
 			<div className="footer">
-				<h1 className="head-text">FindAMentor.com</h1>
+				<h1 className="foot-head">FindAMentor.com</h1>
 				<p className="head-para">
 					Get mentors to inspire powerful conversations and
 					collaborations among experts worldwide so we can change the
@@ -18,9 +18,9 @@ function Footer() {
 				<hr />
 				<div className="bold list">
 					<ul>
-						<li><Link to='/'>Find a mentor</Link></li>
+						<li><Link to='/'><span className="span">Find a mentor</span></Link></li>
 
-						<li><Link to='/registermentor'>Become a mentor</Link></li>
+						<li><Link to='/registermentor'><span className="span">Become a mentor</span></Link></li>
 					</ul>
 				</div>
 				<div className="list">

@@ -1,20 +1,25 @@
 .show-mentor {
-    margin-top: 20px;
     background-color: #ccc;
     width: 100%;
-    height: 100vh;
+    height: 200vh;
 }
 
-.green-div {
+.blue-div {
     width: 100%;
     height: 300px;
     background-color: rgb(3, 3, 54);
 }
 
 .mentor-image {
-     position: absolute;
-     margin-left: 200px;
-     }
+    position: relative;
+    margin-top: -200px;
+    margin-left: 652px;
+    margin-right: 600px;
+    /* border: 2px solid rgb(3, 3, 54); */
+    background-color: rgb(3, 3, 54);
+    border-radius: 10px;
+    padding: 0px 8px;
+}
 
 .mentor-name {
     text-align: center;
@@ -43,7 +48,7 @@
 }
 
 .icon:hover {
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .small-boxes ul {
@@ -58,7 +63,7 @@
 .small-boxes ul li {
     padding: 10px;
     list-style-type: none;
-    margin: 0px 10px;
+    margin: -10px 10px;
     font-size: 22px;
     font-weight: 500;
     background-color: #fff;
@@ -69,7 +74,14 @@
 
 .small-boxes ul li:last-child {
     background-color: rgb(3, 3, 54);
-    color: white;
+}
+
+.small-boxes ul li:last-child span {
+    color: #fff;
+}
+
+.small-boxes ul li:last-child:hover {
+    opacity: 0.9;
 }
 
 .small-boxes ul li:first-child {
@@ -90,9 +102,48 @@
     margin: 0px 20px;
 }
 
-.show-session {
+span:hover {
+    color: rgb(187, 110, 110);
+}
+
+section {
     width: 100%;
     padding: 10px;
+    font-size: 18px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about, .reviews, .session {
+    margin: 15px;
+    text-align: left;
+}
+
+#about-heading, #contact {
+    text-align: center;
+    padding: 10px;
+}
+
+#about-info {
+    margin-left: 300px;
+}
+
+.reviews p, .session p {
+    color: rgb(187, 110, 110);
+}
+
+.session {
     text-align: center;
 }
 
+hr {
+    margin-top: 20px;
+}
+
+.date {
+    display: inline-block;
+    margin-left: 1200px;
+}
