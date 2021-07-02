@@ -20,7 +20,6 @@ const Search = () => {
     return (
 
         <input
-            className="search-input"
             type="text"
             name="search"
             id="search"

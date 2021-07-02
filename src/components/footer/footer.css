@@ -8,9 +8,13 @@
 	color: #f5f5f5;
 }
 
-.footer .head-text {
+.footer .foot-head {
 	text-align: center;
 	color: #ddd;
+}
+
+.foot-head {
+	padding: 10px;
 }
 
 .footer .head-para {
@@ -37,7 +41,7 @@
 	transform: translateY(-3px);
 }
 
-.list li {
+.list li, .span {
 	list-style-type: none;
 	font-size: 16px;
 	cursor: pointer;
@@ -48,17 +52,20 @@
 	transform: translateX(-3px);
 }
 
-.bold li {
+.bold li .span {
 	font-weight: 650;
 }
 
-.bold {
+.bold .span {
 	margin-top: 30px;
 	margin-bottom: 40px;
+	margin-left: 0px;
+	color: #fff;
 }
 
-.bold li:hover {
+.bold li .span:hover {
 	text-decoration: underline;
+	color: #ddd;
 	transform: translateX(-3px);
 }
 

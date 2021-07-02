@@ -17,20 +17,19 @@ function Header() {
 	return (
 		<header>
 			<div className="header">
-				<div>
-					<Link to="/">
-						<h1 className="head-text">FindAMentor.com</h1>
-					</Link>
-				</div>
 				<div className="flex-head">
-					<Search />
-					{/* <p>Become a member</p> */}
-					<Link className="signup btn" to='/home'>
-						Home
-					</Link>
-
 					{!state.isLoggedIn ? (
 						<>
+							<div className="div-head">
+								<Link to="/">
+									<h1 className="head-text">FindAMentor.com</h1>
+								</Link>	
+								<Link className="home btn" to='/home'>
+											Home
+								</Link>
+								<Search />
+							</div>
+							<div className="tel home-tel">+202-11246-12900</div>
 							<Link to="/login" className="login btn">
 								Login
 							</Link>
@@ -41,14 +40,20 @@ function Header() {
 							<Link to="/registermentor" className="signup btn">
 								Become a Mentor
 							</Link>
-							<Link to="/mentors" className="signup btn">
-								Find a mentor
-							</Link>
-
 						</>
 					) : (
 						<>
-							<Link to="/mentors" className="signup btn">
+							<div className="div-head fixed">
+								<Link to="/">
+									<h1 className="head-text">FindAMentor.com</h1>
+								</Link>	
+								<Link className="home btn" to='/home'>
+											Home
+								</Link>
+								<Search />
+							</div>
+							<div className="tel">+202-11246-12900</div>
+							<Link to="/mentors" className="signup btn nav-end">
 								Find a mentor
 							</Link>
 							<button className="signup btn" onClick={logout}>Logout</button>

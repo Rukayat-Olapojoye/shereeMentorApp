@@ -14,7 +14,7 @@ function Home() {
 				</div>
 
 				<div>
-					<h1>Welcome to Find-A-Mentor App</h1>
+					<h1>Welcome to FindAMentor</h1>
 					<h3>....Mentorship at its best!</h3>
 
 				</div>
