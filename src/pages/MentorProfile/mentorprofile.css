@@ -9,16 +9,21 @@
     height: 300px;
     background-color: rgb(3, 3, 54);
 }
+.banner-img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
 
 .mentor-image {
     position: relative;
     margin-top: -200px;
-    margin-left: 652px;
+    margin-left: 730px;
     margin-right: 600px;
     /* border: 2px solid rgb(3, 3, 54); */
-    background-color: rgb(3, 3, 54);
+    /* background-color: rgb(3, 3, 54);
     border-radius: 10px;
-    padding: 0px 8px;
+    padding: 0px 8px; */
 }
 
 .mentor-name {
@@ -102,7 +107,7 @@
     margin: 0px 20px;
 }
 
-span:hover {
+.list-span:hover {
     color: rgb(187, 110, 110);
 }
 

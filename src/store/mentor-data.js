@@ -1,5 +1,5 @@
 //importing the images from images folder
-import imageOne from '../images/img-1.jpg';
+import imageOne from '../images/img-1.jpeg';
 import imageTwo from '../images/img-2.jpg';
 import imageThree from '../images/img-3.jpg';
 import imageFour from '../images/img-4.jpg'
@@ -32,11 +32,11 @@ import imageTwentyEight from '../images/img-28.jpeg';
 const mentorData = [
     {
         id: 1,
-        name: "Sheryl Coker",
-        country: "Poland",
-        company: "Bez Inc",
-        role: "Product Manager",
-        expertise: "Product Management",
+        name: "Choongsaeng Nwoka",
+        country: "Nigeria",
+        company: "Mcrosoft",
+        role: "Software Developer",
+        expertise: "Software Development",
         advice: "Career growth, Interview techniques, Team-building",
         hobbies: "Fishing",
         contact: "315-456-800",
