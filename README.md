@@ -1,7 +1,7 @@
 
 # Find A Mentor App
 
-A mentoring connect application that helpes people find 
+A mentoring connect application that help people find 
 and connect to mentors in their specified fields
  or areas of interest.
 
