@@ -64,7 +64,7 @@ function RegisterMentor() {
     };
 
     //Fucntion for the user registartion handler
-    function registerMentor({ fullname, email, password, confirmpassword, contact, hobbies, country, language, company, role, career }) {
+    function registerMentor({ fullname, email, password, confirmpassword, contact, hobbies, country, language, company, role, career, expertise }) {
 
         // Ensuring user provides all inputs
         if (!email) {
@@ -94,6 +94,7 @@ function RegisterMentor() {
                 country: country,
                 company: company,
                 role: role,
+                expertise: expertise,
                 advice: career,
                 hobbies: hobbies,
                 contact: contact,
@@ -158,7 +159,7 @@ function RegisterMentor() {
                                     {...register("password", { required: true })} />
 
                             </div>
-                            <div className="wrap-input100 ">
+                            <div className="wrap-input100">
                                 <input className="input100"
                                     type="password" name="Confirmpassword"
                                     id="confirmpassword"
@@ -170,7 +171,7 @@ function RegisterMentor() {
                                 <input className="input100"
                                     type="tel"
                                     name="contact"
-                                    id="contact"
+                                    id="phonenumber"
                                     placeholder="Phonenumber"
                                     {...register("contact", { required: true })} />
                             </div>
@@ -204,6 +205,14 @@ function RegisterMentor() {
                                     type="text" name="role"
                                     placeholder="Role"
                                     {...register("role", { required: true })} />
+
+                            </div>
+
+                            <div className="wrap-input100 ">
+                                <input className="input100"
+                                    type="text" name="expertise"
+                                    placeholder="Expertise"
+                                    {...register("expertise", { required: true })} />
 
                             </div>
                             <div className="wrap-input100 ">

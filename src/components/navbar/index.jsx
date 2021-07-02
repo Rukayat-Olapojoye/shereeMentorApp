@@ -23,9 +23,9 @@ function Header() {
 							<div className="div-head">
 								<Link to="/">
 									<h1 className="head-text">FindAMentor.com</h1>
-								</Link>	
+								</Link>
 								<Link className="home btn" to='/home'>
-											Home
+									Home
 								</Link>
 								<Search />
 							</div>
@@ -46,9 +46,9 @@ function Header() {
 							<div className="div-head fixed">
 								<Link to="/">
 									<h1 className="head-text">FindAMentor.com</h1>
-								</Link>	
+								</Link>
 								<Link className="home btn" to='/home'>
-											Home
+									Home
 								</Link>
 								<Search />
 							</div>
