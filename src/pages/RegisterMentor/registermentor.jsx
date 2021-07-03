@@ -5,7 +5,7 @@ import { useHistory } from 'react-router-dom';
 import { AppContext } from '../../components/stateprovider';
 import './Registermentor.css';
 import DefaultLayout from '../../layouts/default-layout';
-//import { cloudinary } from 'cloudinary-core';
+import { toast } from 'react-toastify';
 
 function RegisterMentor() {
     const { register, handleSubmit } = useForm();
@@ -44,21 +44,6 @@ function RegisterMentor() {
             return response.data.url;
         }
         return null;
-        // .then((response) => {
-        //     console.log(response)
-        //     if (response.statusText === "Ok") {
-        //         // Dispatch to update our image in the state.
-        //         context.dispatch({
-        //             type: 'SAVE_IMAGE',
-        //             payload: {
-        //                 imageUploaded: response.data.url,
-        //             },
-        //         });
-
-        //     }
-
-
-        // });
 
 
     };
@@ -68,14 +53,14 @@ function RegisterMentor() {
 
         // Ensuring user provides all inputs
         if (!email) {
-            return alert("Please provide an email");
+            return toast.error("Please provide an email");
         }
         if (!password) {
-            return alert("please provide a Password");
+            return toast.error("please provide a Password");
         }
 
         if (password !== confirmpassword) {
-            return alert("passwords don't match");
+            return toast.error("passwords don't match");
         }
 
 
@@ -83,7 +68,7 @@ function RegisterMentor() {
         let mentorListInStorage = storage ? JSON.parse(storage) : [];
         let userFound = mentorListInStorage.findIndex(_mentor => _mentor.email === email) >= 0;
         if (userFound) {
-            return alert("This user email with " + email + " has already been registered, Please log in");
+            return toast.success("This user email with " + email + " has already been registered, Please log in");
         }
 
         ImageUploadHandler().then((imageUrl) => {
@@ -120,12 +105,6 @@ function RegisterMentor() {
             userHistory.push('/login');
 
         })
-        // create new mentor object and save it to local storage
-
-        //...........IMPORTANT!!!!!!..........................................
-
-        // We should call another dispatch her or a component that pushes the newly added mentor to the mentors list
-
 
     }
 
@@ -149,14 +128,14 @@ function RegisterMentor() {
                                 <input className="input100"
                                     type="text" name="username"
                                     placeholder="Username, e.g: jane.doe@gmail.com"
-                                    {...register("email", { required: true })} />
+                                    {...register("email")} />
                             </div>
                             <div className="wrap-input100">
                                 <input className="input100"
                                     type="password" name="pass"
                                     id="password"
                                     placeholder="Password"
-                                    {...register("password", { required: true })} />
+                                    {...register("password")} />
 
                             </div>
                             <div className="wrap-input100">
@@ -164,7 +143,7 @@ function RegisterMentor() {
                                     type="password" name="Confirmpassword"
                                     id="confirmpassword"
                                     placeholder="Confirm Password"
-                                    {...register("confirmpassword", { required: true })} />
+                                    {...register("confirmpassword")} />
                             </div>
 
                             <div className="wrap-input100">
@@ -173,7 +152,7 @@ function RegisterMentor() {
                                     name="contact"
                                     id="phonenumber"
                                     placeholder="Phonenumber"
-                                    {...register("contact", { required: true })} />
+                                    {...register("contact")} />
                             </div>
 
                             <div className="wrap-input100">
