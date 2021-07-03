@@ -21,7 +21,7 @@ function Header() {
 					{!state.isLoggedIn ? (
 						<>
 							<div className="div-head">
-								<Link to="/">
+								<Link to="/home">
 									<h1 className="head-text">FindAMentor.com</h1>
 								</Link>
 								{/* <Link className="home btn" to='/home'>

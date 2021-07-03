@@ -1,8 +1,9 @@
 .chat-form {
-    height: 80vh;
+    height: 60vh;
     width: 50%;
-    margin: auto;
+    margin: 20px auto;
     background-color:#CED8E1;
+    box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
 }
 
 /* #CED8E1, #1CC8A0,  */

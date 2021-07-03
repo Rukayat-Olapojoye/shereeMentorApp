@@ -4,7 +4,7 @@ import { AppContext } from '../../components/stateprovider';
 import linkedin from '../../images/linkedin.svg';
 import heart from '../../images/heart.svg';
 import DefaultLayout from '../../layouts/default-layout';
-import banner from '../../images/banner.jpeg';
+import banner from './profile.jpeg';
 
 //import styles
 import './mentorprofile.css';
