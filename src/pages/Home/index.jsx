@@ -1,5 +1,5 @@
 import DefaultLayout from '../../layouts/default-layout';
-import mentoringpic from '../Home/mentoring-pic.jpg';
+import mentoringpic from '../Home/home2.jpeg';
 
 // scoped style for this file
 import './home.css';
@@ -14,8 +14,8 @@ function Home() {
 				</div>
 
 				<div>
-					<h1>Welcome to FindAMentor</h1>
-					<h3>....Mentorship at its best!</h3>
+					<h1 className="message">Welcome to FindAMentor</h1>
+					<h3 className="message-small">....Mentorship at its best!</h3>
 
 				</div>
 			</div>

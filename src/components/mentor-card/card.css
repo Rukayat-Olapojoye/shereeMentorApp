@@ -1,10 +1,12 @@
 /* ========STYLING MENTOR PREVIEW LAYOUT========= */
+
+/* #CED8E1, #1CC8A0, #102B3E */
 .card {
 	width: 22%;
 	height: 600px;
-	background-color: #ddd;
+	background-color: #CED8E1;
 	border: 1px solid #999;
-	color: rgb(3, 3, 54);
+	color: #102B3E;
 	border-radius: 0.6em;
 	text-align: left;
 	display: inline-flex;
@@ -21,8 +23,8 @@
 
 .mentor-link {
 	text-decoration: none;
-	color: #000;
-}
+	color: #102B3E;
+	}
 
 img {
 	width: 100%;
@@ -36,7 +38,11 @@ img {
 
 .overlay h1, span, p {
 	font-family: sans-serif;
-	color: rgb(3, 3, 54);
+	color: #102B3E;
+}
+
+.name-link:hover{
+	color:#1CC8A0;
 }
 
 .overlay p, span {

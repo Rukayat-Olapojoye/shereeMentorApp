@@ -1,7 +1,9 @@
 /* ==========HEADER============ */
+
+/* #CED8E1, #1CC8A0, #102B3E */
 .header {
 	width: 100%;
-	background-color: #ddd;
+	background-color: #102B3E;
 	padding: 10px;
  	top: 0;
 	cursor: pointer;
@@ -25,20 +27,26 @@
 	margin-left: -200px;
 	margin-right: 10px;
 	font-family: sans-serif;
-	color: rgb(3, 3, 54);
+	color: #1CC8A0;
+}
+
+.head-text:hover{
+color: #CED8E1;
 }
 
 #search {
 	width: 480px;
 	padding: 14px;
 	margin-left: 60px;
-	border: 2px solid rgb(3, 3, 54);
-	border-radius: 5px;
+	background-color: #CED8E1;
+	border: 2px solid #102B3E;
+	border-radius: 20px;
 }
 
 #search::placeholder {
 	font-size: 16px;
 	width: max-content;
+	color: #102B3E;;
 }
 
 .flex-head {
@@ -54,25 +62,25 @@
 }
 
 .btn:hover {
-	background-color: #fff;
-	color: rgb(3, 3, 54);
+	background-color: #CED8E1;
+	color: #102B3E;
 	border: none;
 }
 
-.login, .signup, .home {
+.login, .signup {
 	padding: 15px;
-	box-shadow: 1px 1px 1px 1px #999;
+	box-shadow: 1px 1px 1px 1px #CED8E1;
 	font-family: sans-serif;
-	color: #fff;
+	color: #102B3E;
 }
 
 .login, .signup {
 	margin: 0px 0px 0px 10px;
 }
 
-.login, .home {
+.login {
 	border: 1px solid #999;
-	color: rgb(3, 3, 54);
+	color: #CED8E1;
 }
 
 .login {
@@ -82,7 +90,7 @@
 .signup {
 	margin-left: 10px;
 	margin-right: 10px;
-	background-color: rgb(3, 3, 54);
+	background-color: #1CC8A0;
 	border: none;
 }
 
@@ -94,6 +102,7 @@
 	margin: 20px 80px 0px;
 	font-size: 18px;
 	font-weight: 500;
+	color: #1CC8A0;
 }
 
 .tel:hover {
