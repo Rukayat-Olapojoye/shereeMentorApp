@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import './card.css';
 function MentorCard({ mentor }) {
 	return (
-		<li className="card">
+		<div className="card">
 			<div>
 				<img src={mentor.image} alt="mentor" />
 				<div className="overlay">
@@ -16,7 +16,7 @@ function MentorCard({ mentor }) {
 					<p>{mentor.languages}</p>
 				</div>
 			</div>
-		</li>
+		</div>
 	);
 }
 

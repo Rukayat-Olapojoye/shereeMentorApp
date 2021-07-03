@@ -36,11 +36,11 @@ function SearchPage() {
 				<p className="first-para">Browse our network of mentors to find the right fit.</p>
 			</div>
 			<div className="mentor-list">
-				<ul>
-					{searchresult.map(mentor => {
-						return <MentorCard mentor={mentor} key={mentor.id} />;
-					})}
-				</ul>
+
+				{searchresult.map(mentor => {
+					return <MentorCard mentor={mentor} key={mentor.id} />;
+				})}
+
 			</div>
 		</DefaultLayout>
 	);

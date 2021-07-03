@@ -14,11 +14,11 @@ function MentorList() {
 				<p className="first-para">Browse our network of mentors to find the right fit.</p>
 			</div>
 			<div className="mentor-list">
-				<ul>
-					{state.mentors.map(mentor => {
-						return <MentorCard mentor={mentor} key={mentor.id} />;
-					})}
-				</ul>
+
+				{state.mentors.map(mentor => {
+					return <MentorCard mentor={mentor} key={mentor.id} />;
+				})}
+
 			</div>
 		</DefaultLayout>
 	);

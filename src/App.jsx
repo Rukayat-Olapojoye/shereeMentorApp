@@ -9,10 +9,13 @@ import MentorProfile from './pages/MentorProfile';
 import RegisterMentor from './pages/RegisterMentor/registermentor';
 import SearchPage from './pages/SearchPage';
 import ChatMentor from './pages/ChatMentor/chatmentor';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 	return (
 		<AppStates>
+			<ToastContainer />
 			<Router>
 				<Switch>
 					{/*render Home Component when we hit /home */}
