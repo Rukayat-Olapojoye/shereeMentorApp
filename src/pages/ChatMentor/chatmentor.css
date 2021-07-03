@@ -28,9 +28,10 @@
     font-size: 16px;
     border: transparent;
     padding-left: 10px;
-    color: #CED8E1;
+    color:#102B3E;
     
 }
+
 
 #chat:focus, #chat:hover {
     border: 2px solid #f5f5f5;
