@@ -1,4 +1,4 @@
-import { useContext, useRef } from 'react';
+import { useContext, useRef, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { AppContext } from '../../components/stateprovider';
 import linkedin from '../../images/linkedin.svg';
@@ -13,6 +13,7 @@ function MentorProfile({ key }) {
 	const {
 		state: { mentors },
 	} = useContext(AppContext);
+	const [currentlyViewing, setCurrentlyViewing] = useState('about');
 
 	// using params to get the value of the dynamic route parameter.
 	// In this case, /mentors/:mentorid
@@ -20,6 +21,10 @@ function MentorProfile({ key }) {
 	const currentMentor = useRef(
 		mentors.find(mentor => mentor.id === parseInt(params.mentorid)),
 	);
+
+	const viewSection = (section) => {
+		setCurrentlyViewing(section)
+	}
 
 
 
@@ -54,44 +59,49 @@ function MentorProfile({ key }) {
 				</div>
 				<div className="inline-headlist">
 					<ul>
-						<li><span className=".list-span">About me</span></li>
-						<li><span className=".list-span">Reviews</span></li>
-						<li><span className=".list-span">Group Sessions</span></li>
+						<li onClick={() => viewSection("about")}><span className=".list-span">About me</span></li>
+						<li onClick={() => viewSection("reviews")}><span className=".list-span">Reviews</span></li>
+						<li onClick={() => viewSection("session")}><span className=".list-span">Group Sessions</span></li>
 					</ul>
 				</div>
-
-				<section>
-					<div className="about">
-						<h2 id="about-heading">About me</h2>
-						<ul id="about-info">
-							<li>
-								{currentMentor.current.role} at {currentMentor.current.company}.
-								Passionate about building, development and creating solutions<br></br>
-								that make people's lives easier.
-							</li>
-							<li>I enjoy <strong>{currentMentor.current.hobbies}</strong></li>
-							<li>I'm mentoring in <strong>{currentMentor.current.expertise}</strong></li>
-							<li>I speak <strong>{currentMentor.current.languages}</strong></li>
-							<li>Ask me about <strong>{currentMentor.current.advice}</strong></li>
-						</ul>
-						<hr />
-						<p id="contact">+{currentMentor.current.contact}</p>
-						<p><strong>Joined</strong><span className="date">June, 2021</span></p>
-						<hr />
-					</div>
-				</section>
-				<section>
-					<div className="reviews">
-						<h2>Reviews</h2>
-						<p>No reviews yet</p>
-					</div>
-				</section>
-				<section>
-					<div className="session">
-						<h2>Session</h2>
-						<p>No upcoming Sessions</p>
-					</div>
-				</section>
+				{currentlyViewing === "about" &&
+					<section>
+						<div className="about">
+							<h2 id="about-heading">About me</h2>
+							<ul id="about-info">
+								<li>
+									{currentMentor.current.role} at {currentMentor.current.company}.
+									Passionate about building, development and creating solutions<br></br>
+									that make people's lives easier.
+								</li>
+								<li>I enjoy <strong>{currentMentor.current.hobbies}</strong></li>
+								<li>I'm mentoring in <strong>{currentMentor.current.expertise}</strong></li>
+								<li>I speak <strong>{currentMentor.current.languages}</strong></li>
+								<li>Ask me about <strong>{currentMentor.current.advice}</strong></li>
+							</ul>
+							<hr />
+							<p id="contact">+{currentMentor.current.contact}</p>
+							<p><strong>Joined</strong><span className="date">June, 2021</span></p>
+							<hr />
+						</div>
+					</section>
+				}
+				{currentlyViewing === "reviews" &&
+					<section>
+						<div className="reviews">
+							<h2>Reviews</h2>
+							<p>No reviews yet</p>
+						</div>
+					</section>
+				}
+				{currentlyViewing === "session" &&
+					<section>
+						<div className="session">
+							<h2>Session</h2>
+							<p>No upcoming Sessions</p>
+						</div>
+					</section>
+				}
 			</div>
 		</DefaultLayout>
 	);

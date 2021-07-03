@@ -17,13 +17,20 @@
 
 .mentor-image {
     position: relative;
-    margin-top: -200px;
-    margin-left: 730px;
-    margin-right: 600px;
-    /* border: 2px solid rgb(3, 3, 54); */
-    /* background-color: rgb(3, 3, 54);
-    border-radius: 10px;
-    padding: 0px 8px; */
+    margin: -200px auto 0;
+    width:400px;
+    overflow: hidden;
+     border: 6px solid rgb(3, 3, 54);
+    border-radius: 0.5rem;
+    
+
+}
+
+.mentor-image img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin:0;
 }
 
 .mentor-name {
