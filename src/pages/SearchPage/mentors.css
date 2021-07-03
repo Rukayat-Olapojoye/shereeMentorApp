@@ -6,27 +6,41 @@
 /* Change any style here to match your design for your home page*/
 
 /* ========STYLING MENTOR PREVIEW LAYOUT========= */
+
+/* #CED8E1, #1CC8A0, #102B3E */
+
+
 .heading-text {
 	padding: 25px;
 	text-align: center;
-	background-color: rgb(3, 3, 54);
-	color: #ddd;
+	background-color: #102B3E;
+
 }
 
 .heading-text h1 {
 	font-size: 40px;
+	color: #1CC8A0;
+
+}
+
+.top-hr{
+	height:1px;
 }
 
 .heading-text .first-para {
 	font-size: 22px;
-	color: #ddd;
+	color: #CED8E1;
+	padding-bottom: 20px;
 }
 
 .mentor-list {
+	gap: 1rem;
 	width: 100%;
 	display: flex;
+	flex-wrap: wrap;
+	justify-content:center;
 	align-items: center;
 	text-align: center;
-	margin-bottom: 30px;
-	margin-top: 30px;
-}
+	padding-bottom: 30px;
+	padding-top: 30px;
+	}

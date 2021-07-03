@@ -21,12 +21,12 @@ function Header() {
 					{!state.isLoggedIn ? (
 						<>
 							<div className="div-head">
-								<Link to="/">
+								<Link to="/home">
 									<h1 className="head-text">FindAMentor.com</h1>
 								</Link>
-								<Link className="home btn" to='/home'>
+								{/* <Link className="home btn" to='/home'>
 									Home
-								</Link>
+								</Link> */}
 								<Search />
 							</div>
 							<div className="tel home-tel">+202-11246-12900</div>
@@ -47,9 +47,9 @@ function Header() {
 								<Link to="/">
 									<h1 className="head-text">FindAMentor.com</h1>
 								</Link>
-								<Link className="home btn" to='/home'>
+								{/* <Link className="home btn" to='/home'>
 									Home
-								</Link>
+								</Link> */}
 								<Search />
 							</div>
 							<div className="tel">+202-11246-12900</div>
