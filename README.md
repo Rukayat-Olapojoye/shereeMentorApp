@@ -1,7 +1,7 @@
 
 # Find A Mentor App
 
-A mentoring connect application that helpes people find 
+A mentoring connect application that help people find 
 and connect to mentors in their specified fields
  or areas of interest.
 
@@ -12,9 +12,12 @@ and connect to mentors in their specified fields
 - Sign In
 - Sign Out
 - Mentor Search
-- Contact a Mentor
+- Browse Mentors
 - Mentor Profile
+- Contact a Mentor
 
+- Click on mentor's name to go to profile
+- Click on ask a question to contact mentors
   
 ## Contributing
 
@@ -27,5 +30,3 @@ Current Contributors:
 - Fatimah Hassan
 - Oluwasolape Jegede
 - Rukayat Olapojoye
-
-  
