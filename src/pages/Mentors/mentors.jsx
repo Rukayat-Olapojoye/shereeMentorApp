@@ -10,8 +10,10 @@ function MentorList() {
 	return (
 		<DefaultLayout>
 			<div className="heading-text">
+				<hr className="top-hr" />
 				<h1>Our Mentors</h1>
 				<p className="first-para">Browse our network of mentors to find the right fit.</p>
+				<hr />
 			</div>
 			<div className="mentor-list">
 

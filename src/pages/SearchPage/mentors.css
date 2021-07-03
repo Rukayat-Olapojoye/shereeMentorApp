@@ -23,9 +23,14 @@
 
 }
 
+.top-hr{
+	height:1px;
+}
+
 .heading-text .first-para {
 	font-size: 22px;
 	color: #CED8E1;
+	padding-bottom: 20px;
 }
 
 .mentor-list {
@@ -36,6 +41,6 @@
 	justify-content:center;
 	align-items: center;
 	text-align: center;
-	margin-bottom: 30px;
-	margin-top: 30px;
+	padding-bottom: 30px;
+	padding-top: 30px;
 	}
