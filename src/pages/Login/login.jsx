@@ -3,24 +3,18 @@ import { useForm } from 'react-hook-form';
 import { useHistory } from 'react-router-dom';
 import { AppContext } from '../../components/stateprovider';
 import DefaultLayout from '../../layouts/default-layout';
-//import mentorData from '../../store/mentor-data';
 import './login.css';
+import { toast } from 'react-toastify';
 //import {CookieProvider} from 'react-cookie';
 
 function LoginPage() {
+
     const context = useContext(AppContext);
     const { register, handleSubmit } = useForm();
     const userHistory = useHistory();
 
     //Function for handling user login
     const Userlogin = ({ email, password }) => {
-        //Ensuring all users provies all inputs
-        // if (!email) {
-        //     return alert("Please provide an email");
-        // }
-        // if (!password) {
-        //     return alert("Please provide a Password");
-        // }
 
         let user = null;
         // try to find a  regular user
@@ -36,17 +30,17 @@ function LoginPage() {
         }
 
         if (!user) {
-            return alert('An account for this email was not found');
+            return toast.error('An account for this email was not found');
         }
 
         const userdata = user;
         console.log(userdata);
 
         if (password !== userdata.password) {
-            return alert('Email or Password was incorrect');
+            return toast.error('Email or Password was incorrect');
         }
 
-        alert('Login successful for: ' + email);
+        toast.success('Login successful for: ' + email);
 
         context.dispatch({
             type: 'LOGIN',
@@ -74,7 +68,7 @@ function LoginPage() {
                                 name="username"
                                 placeholder="Email"
                                 required
-                                {...register('email', { required: true })}
+                                {...register('email')}
                             />
                         </div>
                         <div className="wrap-input100">
@@ -84,7 +78,7 @@ function LoginPage() {
                                 name="pass"
                                 placeholder="Password"
                                 required
-                                {...register('password', { required: true })}
+                                {...register('password')}
                             />
                         </div>
                         <div className="container-login100-form-btn">

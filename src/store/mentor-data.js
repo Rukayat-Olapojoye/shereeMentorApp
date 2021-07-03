@@ -34,7 +34,7 @@ const mentorData = [
         id: 1,
         name: "Choongsaeng Nwoka",
         country: "Nigeria",
-        company: "Mcrosoft",
+        company: "Microsoft",
         role: "Software Developer",
         expertise: "Software Development",
         advice: "Career growth, Interview techniques, Team-building",
