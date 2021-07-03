@@ -59,9 +59,9 @@ function MentorProfile({ key }) {
 				</div>
 				<div className="inline-headlist">
 					<ul>
-						<li onClick={() => viewSection("about")}><span className=".list-span">About me</span></li>
-						<li onClick={() => viewSection("reviews")}><span className=".list-span">Reviews</span></li>
-						<li onClick={() => viewSection("session")}><span className=".list-span">Group Sessions</span></li>
+						<li onClick={() => viewSection("about")}><span className="list-span">About me</span></li>
+						<li onClick={() => viewSection("reviews")}><span className="list-span">Reviews</span></li>
+						<li onClick={() => viewSection("session")}><span className="list-span">Group Sessions</span></li>
 					</ul>
 				</div>
 				{currentlyViewing === "about" &&
@@ -79,10 +79,10 @@ function MentorProfile({ key }) {
 								<li>I speak <strong>{currentMentor.current.languages}</strong></li>
 								<li>Ask me about <strong>{currentMentor.current.advice}</strong></li>
 							</ul>
-							<hr />
+							<hr className="Profile-hr" />
 							<p id="contact">+{currentMentor.current.contact}</p>
 							<p><strong>Joined</strong><span className="date">June, 2021</span></p>
-							<hr />
+							<hr className="Profile-hr" />
 						</div>
 					</section>
 				}
