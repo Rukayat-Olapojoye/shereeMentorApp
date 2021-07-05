@@ -92,7 +92,7 @@ function RegisterMentor() {
 
             // save the users data for accessing later
             localStorage.setItem('mentor-list', JSON.stringify([newMentor, ...mentorListInStorage]))
-            alert("User created Sucessfully, please log in to continue!");
+            toast.success("Thank you for coming onboard, your profile has been created!");
 
 
             // dispatch for REGISTER_MENTOR carrying the newMentor Object
